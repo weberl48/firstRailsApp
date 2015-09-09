@@ -1,0 +1,8 @@
+<h1>Posts</h1>
+<%= link_to "New Posts", new_post_path %>
+<!-- link_to is a method that takes two arguments -->
+​<% @posts.each do |post| %>
+  <%= post.author %>
+  <%= post.title %>
+  <%= post.body %>
+<% end %>
